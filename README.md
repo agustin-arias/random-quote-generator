@@ -1,4 +1,4 @@
-# Random Quote Generator made //with <img src="./logo/React_logo_wordmark.png" alt="logo" width=75>
+# Random Quote Generator made with <img src="./logo/React_logo_wordmark.png" alt="logo" width=75>
 
 ## Demo
 A demo can be found in [this page](https://agustinntarias.github.io/calendar/).
