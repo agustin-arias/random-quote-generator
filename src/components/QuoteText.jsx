@@ -1,14 +1,15 @@
 import React, { Component } from "react";
+import "./QuoteText.css";
 
 class QuoteText extends Component {
   render() {
-    const { color, quote } = this.props;
+    const { color, content } = this.props;
     return (
-      <div className="container">
-        <h4 style={{ color }}>
+      <div className="container" id="text">
+        <h3 style={{ color, transition: "color 1s" }}>
           <i className="fa fa-quote-left mr-2"></i>
-          {quote}
-        </h4>
+          {content}
+        </h3>
       </div>
     );
   }

@@ -1,9 +1,6 @@
-import randomNumber from "./randomNumber";
-
 export default async function fetchRandomQuote() {
-  const url = "http://quotes.stormconsultancy.co.uk/quotes.json";
+  const url = "http://api.quotable.io/random";
   const response = await fetch(url);
   const data = await response.json();
-  const { author, quote } = data[randomNumber(44)];
-  return { author, quote };
+  return data;
 }

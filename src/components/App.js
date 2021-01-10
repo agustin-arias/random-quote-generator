@@ -9,14 +9,23 @@ export default class App extends React.Component {
     color: "",
     randomQuoteData: {
       author: "",
-      quote: "",
+      content: "",
     },
   };
 
+  async fadeOutInText() {
+    const text = document.getElementById("text");
+    text.classList.add("fadeOutIn");
+    setTimeout(() => {
+      text.classList.remove("fadeOutIn");
+    }, 1000);
+  }
+
   async handleNewQuote() {
-    const { author, quote } = await fetchRandomQuote();
+    await this.fadeOutInText();
+    const { author, content } = await fetchRandomQuote();
     const color = changeBodyColor();
-    this.setState({ color, randomQuoteData: { author, quote } });
+    this.setState({ color, randomQuoteData: { author, content } });
   }
 
   async componentDidMount() {

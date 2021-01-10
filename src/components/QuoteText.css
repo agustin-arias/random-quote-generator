@@ -1,0 +1,15 @@
+.fadeOutIn {
+  animation: fadeOutAnimation 1s ease-in-out 1;
+}
+
+@keyframes fadeOutAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
