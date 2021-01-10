@@ -4,7 +4,7 @@ class QuoteAuthor extends Component {
   render() {
     const { color, author } = this.props;
     return (
-      <div className="container mt-3" style={{ height: "50px" }}>
+      <div className="container mt-3" style={{ height: "50px" }} id="author">
         <span className="float-right" style={{ color }}>
           - {author}
         </span>

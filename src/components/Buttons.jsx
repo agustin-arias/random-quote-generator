@@ -18,6 +18,7 @@ class Buttons extends Component {
             href={twitterUrl}
             className="btn btn-primary mr-2 transition-color"
             style={styles}
+            id="tweet-quote"
           >
             <i className="fa fa-twitter"></i>
           </a>
@@ -34,6 +35,7 @@ class Buttons extends Component {
           className="btn btn-primary transition-color"
           style={styles}
           onClick={onNewQuote}
+          id="new-quote"
         >
           New Quote
         </button>

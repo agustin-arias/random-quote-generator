@@ -15,6 +15,7 @@ class QuoteBox extends Component {
           color: color,
           width: "550px",
         }}
+        id="quote-box"
       >
         <QuoteText color={color} content={content} />
         <QuoteAuthor color={color} author={author} />
