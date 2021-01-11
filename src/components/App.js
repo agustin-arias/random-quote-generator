@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import "./App.css";
 import QuoteBox from "./QuoteBox";
 import changeBodyColor from "../logic/changeBodyColor";
 import fetchRandomQuote from "../logic/fetchRandomQuote";
 
-export default class App extends React.Component {
+export default class App extends Component {
   state = {
     color: "",
     randomQuoteData: {

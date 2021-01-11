@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import QuoteText from "./QuoteText";
 import QuoteAuthor from "./QuoteAuthor";
 import Buttons from "./Buttons";
+import "./QuoteBox.css";
 
 class QuoteBox extends Component {
   render() {
@@ -9,11 +10,10 @@ class QuoteBox extends Component {
     const { author, content } = randomQuoteData;
     return (
       <div
-        className="vertical-center jumbotron text-center py-5 px-6 bg-white"
+        className="vertical-center jumbotron text-center py-5 px-6 bg-white responsive-width"
         style={{
           backgroundColor: color,
           color: color,
-          width: "550px",
         }}
         id="quote-box"
       >
