@@ -8,3 +8,10 @@
 .responsive-width {
   width: 400px;
 }
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+  .responsive-width {
+    width: 540px;
+  }
+}

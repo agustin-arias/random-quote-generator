@@ -24,6 +24,7 @@ class QuoteBox extends Component {
           onNewQuote={onNewQuote}
           randomQuoteData={randomQuoteData}
         />
+        {/* asdasd */}
       </div>
     );
   }

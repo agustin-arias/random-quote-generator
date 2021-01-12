@@ -6,7 +6,7 @@ class QuoteText extends Component {
     const { color, content } = this.props;
     return (
       <div className="container" id="text">
-        <h3 style={{ color, transition: "color 1s" }}>
+        <h3 style={{ color, transition: "color 1s" }} className="">
           <i className="fa fa-quote-left mr-2"></i>
           {content}
         </h3>
