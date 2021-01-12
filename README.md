@@ -2,7 +2,7 @@
 
 ## Demo
 
-A demo can be found in [this page](https://agustinntarias.github.io/calendar/).
+A demo can be found in [this page](https://random-quote-generator-anta.netlify.app/).
 
 ## Technologies used
 
