@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import QuoteBox from "./QuoteBox";
 import changeBodyColor from "../logic/changeBodyColor";
 import fetchRandomQuote from "../logic/fetchRandomQuote";
+import LinkToPage from "./LinkToPage";
+import QuoteBox from "./QuoteBox";
 
 export default class App extends Component {
   state = {
@@ -40,6 +41,9 @@ export default class App extends Component {
             this.handleNewQuote();
           }}
           randomQuoteData={this.state.randomQuoteData}
+        />
+        <LinkToPage
+          url={"https://github.com/agustinntarias/random-quote-generator"}
         />
       </React.Fragment>
     );
