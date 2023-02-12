@@ -5,29 +5,29 @@ import Buttons from "./Buttons";
 import "./QuoteBox.css";
 
 class QuoteBox extends Component {
-  render() {
-    const { color, onNewQuote, randomQuoteData } = this.props;
-    const { author, content } = randomQuoteData;
-    return (
-      <div
-        className="vertical-center jumbotron text-center py-5 px-6 bg-white responsive-width"
-        style={{
-          backgroundColor: color,
-          color: color,
-        }}
-        id="quote-box"
-      >
-        <QuoteText color={color} content={content} />
-        <QuoteAuthor color={color} author={author} />
-        <Buttons
-          color={color}
-          onNewQuote={onNewQuote}
-          randomQuoteData={randomQuoteData}
-        />
-        {/* asdasd */}
-      </div>
-    );
-  }
+    render() {
+        const { color, onNewQuote, randomQuoteData } = this.props;
+        const { author, content } = randomQuoteData;
+        return (
+            <div
+                className="vertical-center jumbotron text-center py-5 px-6 bg-white responsive-width"
+                style={{
+                    backgroundColor: color,
+                    color: color,
+                }}
+                id="quote-box"
+            >
+                <QuoteText color={color} content={content} />
+                <QuoteAuthor color={color} author={author} />
+                <Buttons
+                    color={color}
+                    onNewQuote={onNewQuote}
+                    randomQuoteData={randomQuoteData}
+                />
+                {/* asdasd */}
+            </div>
+        );
+    }
 }
 
 export default QuoteBox;
